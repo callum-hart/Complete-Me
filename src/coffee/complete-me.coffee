@@ -84,7 +84,7 @@ class CompleteMe
     else if enter and @selectedResult
       @handleSelectedResult()
       @resultsOpen = no
-    else if enter and @options.canAddNewRecords
+    else if @options.canAddNewRecords and Utils.present(value) and enter
       @input.focus()
       @hideResults()
       @options.onAdd value
