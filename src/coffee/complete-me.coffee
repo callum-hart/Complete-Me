@@ -30,7 +30,6 @@ class CompleteMe
 
     if @elm
       @options = Utils.extend {}, @defaultOptions, options
-      @options = Utils.extend {}, @options, @ # Check this is best practise for callbacks, look into only making some methods public.
       @allResults = @options.data
       @handleTemplate()
       @bindPersistentEvents()
