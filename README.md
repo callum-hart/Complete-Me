@@ -49,8 +49,10 @@ var instance = new CompleteMe(element, { options });
 
 ### Data attributes
 
-- `data-tabindex` Set the tabindex for the slab input, *element* `.cm-container`
-- `data-save-value` The value of the complete me; useful when a form is submitted and you need to get the value of the input., *element* `.cm-container`
+- `data-tabindex` Set the tabindex for the input.
+- `data-save-value` Get the value of the complete me; useful when a form is submitted and you need to get the value of the input.
+
+> data attributes are on the complete me element.
 
 ### Markup
 
