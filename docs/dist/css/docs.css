@@ -1,32 +1,28 @@
 body {
-  margin: 0;
-  padding: 0 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 20px;
   font-family: "Source Sans Pro", sans-serif;
   color: #252f40;
 }
-#content {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 60px 0;
-}
-h1 {
+#content h1 {
   margin: 0;
   font-size: 27px;
 }
-h2 {
+#content h2 {
   margin: 30px 0 0 0;
   font-size: 19px;
   font-weight: 800;
 }
-p {
+#content p {
   margin: 12px 0;
   font-size: 16px;
   line-height: 22px;
 }
-a {
+#content a {
   color: #3d7cff;
   text-decoration: none;
 }
-a:hover {
+#content a:hover {
   color: #0a5aff;
 }
