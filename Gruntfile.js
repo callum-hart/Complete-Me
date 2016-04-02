@@ -9,14 +9,16 @@ module.exports = function(grunt) {
     coffee: {
       compile: {
         files: {
-          "lib/js/complete-me.js": "src/coffee/complete-me.coffee"
+          "lib/js/complete-me.js": "src/coffee/complete-me.coffee",
+          "docs/dist/js/docs.js": "docs/src/coffee/docs.coffee"
         }
       }
     },
     less: {
       development: {
         files: {
-          "lib/css/complete-me.css": "src/less/complete-me.less"
+          "lib/css/complete-me.css": "src/less/complete-me.less",
+          "docs/dist/css/docs.css": "docs/src/less/docs.less"
         }
       }
     },
@@ -34,7 +36,7 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ["src/less/*", "src/coffee/*", "examples.html"],
+      files: ["src/less/*", "src/coffee/*", "docs/src/less/*", "docs/src/coffee/*"],
       tasks: ["coffee", "less", "uglify", "cssmin"],
       options: {
         livereload: true
