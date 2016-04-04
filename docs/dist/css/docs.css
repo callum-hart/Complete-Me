@@ -1,4 +1,6 @@
 body {
+  float: left;
+  width: 100%;
   margin: 0;
   padding: 60px 0;
   font-family: "Source Sans Pro", sans-serif;
@@ -9,17 +11,22 @@ section {
   padding: 0 20px;
 }
 section #title {
-  border-bottom: 1px solid;
+  margin: 0 0 30px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 2px solid;
 }
-section h1 {
+section #title small {
+  font-size: 15px;
+}
+section #title h1 {
   margin: 0;
   font-size: 25px;
+  text-transform: uppercase;
 }
 section p {
-  margin: 12px 0;
-  font-size: 16px;
-  line-height: 22px;
-  -webkit-font-smoothing: antialiased;
+  margin: 16px 0;
+  font-size: 18px;
+  line-height: 24px;
 }
 section a {
   color: #3d7cff;
@@ -34,9 +41,9 @@ section a:hover {
   margin: 0 auto;
 }
 .example h2 {
-  margin-left: 20px;
-  font-size: 18px;
-  border-bottom: 1px solid;
+  float: left;
+  margin: 20px 0 20px 20px;
+  font-size: 22px;
 }
 .example .box {
   position: relative;
@@ -48,17 +55,22 @@ section a:hover {
   border: 1px solid #ccc;
 }
 .example .box.dark {
+  padding: 0 20px;
   background: #ccc;
 }
 .example .box .box-label {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
   text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
 }
 .example .box pre {
   margin: 0;
+  overflow: auto;
 }
 .example .box code {
   font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
 }
