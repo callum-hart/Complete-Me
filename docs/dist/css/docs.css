@@ -13,20 +13,22 @@ section {
 section #title {
   margin: 0 0 30px 0;
   padding: 0 0 10px 0;
-  border-bottom: 2px solid;
-}
-section #title small {
-  font-size: 15px;
+  border-bottom: 2px solid #384661;
 }
 section #title h1 {
   margin: 0;
   font-size: 25px;
   text-transform: uppercase;
+  color: #384661;
 }
 section p {
-  margin: 16px 0;
+  margin: 18px 0;
   font-size: 18px;
   line-height: 24px;
+  color: rgba(56, 70, 97, 0.9);
+}
+section p:last-of-type {
+  margin-bottom: 0;
 }
 section a {
   color: #3d7cff;
@@ -42,8 +44,9 @@ section a:hover {
 }
 .example h2 {
   float: left;
-  margin: 20px 0 20px 20px;
-  font-size: 22px;
+  margin: 30px 0 20px 20px;
+  font-size: 21px;
+  color: #384661;
 }
 .example .box {
   position: relative;
@@ -52,11 +55,11 @@ section a:hover {
   margin: 0 0 15px 0;
   padding: 20px;
   box-sizing: border-box;
-  border: 1px solid #ccc;
+  border: 1px solid #f3f4f6;
 }
 .example .box.dark {
   padding: 0 20px;
-  background: #ccc;
+  background: #f3f4f6;
 }
 .example .box .box-label {
   position: absolute;
@@ -65,6 +68,7 @@ section a:hover {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
+  color: rgba(56, 70, 97, 0.3);
 }
 .example .box pre {
   margin: 0;
@@ -73,4 +77,5 @@ section a:hover {
 .example .box code {
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 14px;
+  color: rgba(56, 70, 97, 0.9);
 }

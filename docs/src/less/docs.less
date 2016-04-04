@@ -14,23 +14,25 @@ section {
   #title {
     margin: 0 0 30px 0;
     padding: 0 0 10px 0;
-    border-bottom: 2px solid;
-
-    small {
-      font-size: 15px;
-    }
+    border-bottom: 2px solid rgba(56,70,97,1);
 
     h1 {
       margin: 0;
       font-size: 25px;
       text-transform: uppercase;
+      color: rgba(56,70,97,1);
     }
   }
 
   p {
-    margin: 16px 0;
+    margin: 18px 0;
     font-size: 18px;
     line-height: 24px;
+    color: rgba(56,70,97,.9);
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   a {
@@ -49,8 +51,9 @@ section {
 
   h2 {
     float: left;
-    margin: 20px 0 20px 20px;
-    font-size: 22px;
+    margin: 30px 0 20px 20px;
+    font-size: 21px;
+    color: rgba(56,70,97,1);
   }
 
   .box {
@@ -60,11 +63,11 @@ section {
     margin: 0 0 15px 0;
     padding: 20px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(243,244,246,1);
 
     &.dark {
       padding: 0 20px;
-      background: #ccc;
+      background: rgba(243,244,246,1);
     }
 
     .box-label {
@@ -74,6 +77,7 @@ section {
       text-transform: uppercase;
       font-size: 12px;
       font-weight: 600;
+      color: rgba(56,70,97,.3);
     }
 
     pre {
@@ -84,6 +88,7 @@ section {
     code {
       font-family: "Lucida Console", Monaco, monospace;
       font-size: 14px;
+      color: rgba(56,70,97,.9);
     }
   }
 }
