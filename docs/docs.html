@@ -5,12 +5,13 @@
   <title>Complete Me Docs</title>
   <link href="../lib/css/complete-me.min.css" rel="stylesheet">
   <link href="dist/css/docs.css" rel="stylesheet">
-  <link href="vendor/css/color-brewer.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900italic,900,700italic,700,600italic,600,400italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <section id="content">
-    <h1>Complete Me</h1>
+  <section>
+    <div id="title">
+      <h1>Complete Me</h1>
+    </div>
     <p>
       Complete Me is a JavaScript library for <strong>autocompletes</strong>.
       It can <strong>suggest results</strong> (rather like Google search).
@@ -20,43 +21,69 @@
     <p>
       It also <strong>doesn’t have</strong> any <strong>dependencies</strong>.
     </p>
-
-    <h2>Library</h2>
     <p>
-      The <strong><a href="">library</a></strong> can be found on GitHub as can the
-      <strong><a href="">documentation</a></strong>.
+      The <strong>library</strong> can be found on <a href="">GitHub</a> as can the <a href="">documentation.</a>
     </p>
-
-    <h2>Reading</h2>
-    <p>A blog post about building it can be <a href="">found here</a>.</p>
-
-    <h2>Examples</h2>
-    <p>And some examples of the library can be seen below:</p>
+    <p>A <strong>blog post</strong> about building it can be <a href="">found here</a>.</p>
+    <p>And some <strong>examples</strong> of the library can be seen below:</p>
   </section>
 
-  <section id="examples">
-    <pre>
+  <div class="example">
+    <h2>Example #1</h2>
+    <div class="box">
+      <span class="box-label">Result</span>
+      <div id="auto-complete" data-tabindex="1"></div>
+    </div>
+
+    <div class="box dark">
+      <span class="box-label">HTML</span>
+<pre>
 <code>
-autoComplete2 = new CompleteMe("#auto-complete-2", {
-  placeholder: "Type here 2",
-  noResultsText: "No results match 2",
-  data: data2,
-  saveByValue: false,
-  selectedKey: "name_contains",
-  onSelect: function(value, key) {
-    return console.log("onSelect " + key + ": " + value);
-  },
-  suggestResult: true,
-  onSuggestionSelected: function(value) {
-    return console.log("onSuggestionSelected " + value);
-  }
+&lt;div id="auto-complete" data-tabindex="1"&gt;&lt;/div&gt;
+</code>
+</pre>
+    </div>
+
+    <div class="box dark">
+      <span class="box-label">JS</span>
+<pre>
+<code>
+autoComplete = new CompleteMe("#auto-complete", {
+  data: data
 });
 </code>
-    </pre>
-  </section>
+</pre>
+      </div>
+  </div>
 
-  <script src="vendor/js/highlight.pack.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+    <div class="example">
+      <h2>Example #2</h2>
+      <div class="box">
+        <span class="box-label">Result</span>
+        <div id="auto-complete-2" data-tabindex="1"></div>
+      </div>
+
+      <div class="box dark">
+        <span class="box-label">HTML</span>
+<pre>
+<code>
+&lt;div id="auto-complete" data-tabindex="1"&gt;&lt;/div&gt;
+</code>
+</pre>
+      </div>
+
+      <div class="box dark">
+        <span class="box-label">JS</span>
+<pre>
+<code>
+autoComplete = new CompleteMe("#auto-complete", {
+  data: data
+});
+</code>
+</pre>
+        </div>
+    </div>
+
   <script type="text/javascript" src="../lib/js/complete-me.min.js"></script>
   <script type="text/javascript" src="dist/js/docs.js"></script>
 </body>
