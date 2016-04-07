@@ -34,14 +34,14 @@
     <h2>Example #1</h2>
     <div class="box">
       <span class="box-label">Result</span>
-      <div id="auto-complete" data-tabindex="1"></div>
+      <div id="example-one" data-tabindex="1"></div>
     </div>
 
     <div class="box dark">
       <span class="box-label">HTML</span>
 <pre>
 <code>
-&lt;div id="auto-complete" data-tabindex="1"&gt;&lt;/div&gt;
+&lt;div id="example-one" data-tabindex="1"&gt;&lt;/div&gt;
 </code>
 </pre>
     </div>
@@ -50,8 +50,13 @@
       <span class="box-label">JS</span>
 <pre>
 <code>
-autoComplete = new CompleteMe("#auto-complete", {
-  data: data
+exampleOne = new CompleteMe("#example-one", {
+  data: names,
+  suggestResult: true,
+  placeholder: "",
+  onSelect: function(value) {
+    return console.log("onSelect: " + value);
+  }
 });
 </code>
 </pre>
