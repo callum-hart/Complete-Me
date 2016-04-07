@@ -8,7 +8,7 @@ Nothing
 
 ### Demo
 
-A demo of the library in action can be [found here](http://www.callumhart.com/blog/decouple-data-with-how-its-shown-in-the-dom).
+A demo of the library in action can be [found here](http://www.callumhart.com/open-source/complete-me).
 
 ### Supported browsers
 
