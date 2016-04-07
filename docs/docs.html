@@ -50,12 +50,18 @@
       <span class="box-label">JS</span>
 <pre>
 <code>
+// names is an array of 1000 strings
+
 exampleOne = new CompleteMe("#example-one", {
   data: names,
   suggestResult: true,
   placeholder: "",
+  canAddNewRecords: true,
   onSelect: function(value) {
-    return console.log("onSelect: " + value);
+    console.log("onSelect " + value);
+  },
+  onAdd: function(newRecord) {
+    console.log("onAdd " + newRecord);
   }
 });
 </code>
@@ -67,14 +73,14 @@ exampleOne = new CompleteMe("#example-one", {
       <h2>Example #2</h2>
       <div class="box">
         <span class="box-label">Result</span>
-        <div id="auto-complete-2" data-tabindex="1"></div>
+        <div id="example-two" data-tabindex="2"></div>
       </div>
 
       <div class="box dark">
         <span class="box-label">HTML</span>
 <pre>
 <code>
-&lt;div id="auto-complete" data-tabindex="1"&gt;&lt;/div&gt;
+&lt;div id="example-two" data-tabindex="2"&gt;&lt;/div&gt;
 </code>
 </pre>
       </div>
@@ -83,8 +89,18 @@ exampleOne = new CompleteMe("#example-one", {
         <span class="box-label">JS</span>
 <pre>
 <code>
-autoComplete = new CompleteMe("#auto-complete", {
-  data: data
+// users is an array of 1000 objects
+
+exampleTwo = new CompleteMe("#example-two", {
+  data: users,
+  suggestResult: true,
+  selectedKey: 647,
+  onSelect: function(value, key) {
+    console.log("onSelect " + key + ": " + value);
+  },
+  onSuggestionSelected: function(value) {
+    console.log("onSuggestionSelected " + value);
+  }
 });
 </code>
 </pre>
