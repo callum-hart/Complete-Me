@@ -8,7 +8,11 @@ Nothing
 
 ### Demo
 
-A demo of the library can be [found here]().
+A demo of the library in action can be [found here]().
+
+### Supported browsers
+
+So far tested on Chrome, Firefox and Safari.
 
 ### To initialise
 
