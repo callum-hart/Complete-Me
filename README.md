@@ -1,13 +1,14 @@
 # Complete-Me
-Performant javascript autocomplete
----
 
-- Performant - maximum of 10 DOM elements in results list. DOM elements are recycled on scroll and key up/down.
-- Suggests results.
+JavaScript library for autocompletes
 
 ### Dependencies
 
-- Nothing
+Nothing
+
+### Demo
+
+A demo of the library can be [found here]().
 
 ### To initialise
 
