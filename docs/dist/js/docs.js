@@ -6,7 +6,6 @@
   exampleOne = new CompleteMe("#example-one", {
     data: names,
     suggestResult: true,
-    placeholder: "",
     canAddNewRecords: true,
     onSelect: function(value) {
       return console.log("onSelect " + value);
@@ -3023,6 +3022,7 @@
   exampleTwo = new CompleteMe("#example-two", {
     data: users,
     suggestResult: true,
+    placeholder: "",
     selectedKey: 647,
     onSelect: function(value, key) {
       return console.log("onSelect " + key + ": " + value);

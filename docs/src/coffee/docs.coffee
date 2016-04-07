@@ -5,7 +5,6 @@ names = ["Farmer Tyson","Jenny Schroeder","Burke Frazier","Odessa Roy","Corrine 
 exampleOne = new CompleteMe "#example-one",
               data: names
               suggestResult: yes
-              placeholder: ""
               canAddNewRecords: yes
               onSelect: (value) ->
                 console.log "onSelect #{value}"
@@ -19,6 +18,7 @@ users = [{"key": 0,"value": "Ramsey Schroeder"},{"key": 1,"value": "Owen Sweeney
 exampleTwo = new CompleteMe "#example-two",
               data: users
               suggestResult: yes
+              placeholder: ""
               selectedKey: 647
               onSelect: (value, key) ->
                 console.log "onSelect #{key}: #{value}"
