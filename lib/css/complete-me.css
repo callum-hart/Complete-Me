@@ -74,6 +74,7 @@
 }
 .cm-container .cm-input-wrap .cm-suggestion {
   color: rgba(174, 169, 169, 0.8);
+  -webkit-text-fill-color: rgba(174, 169, 169, 0.8);
 }
 .cm-container .cm-results-wrap {
   opacity: 0;
