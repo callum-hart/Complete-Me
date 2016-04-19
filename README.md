@@ -33,7 +33,7 @@ var instance = new CompleteMe(element, { options });
 ### Configuration options
 
 - `data` Data that should show in the results dropdown, can be:
-  - Empty array i.e `[]` *TODO just set data to an empty array in defaultOptions.*
+  - Empty array i.e `[]`
   - Flat array i.e `[“a”, “b”, “c”]`
   - Array of objects i.e `[{“key”: “id”, “value”: “ID”}, {“key”: “email_address”, “value” : “Email Address”}]`
 - `placeholder` Placeholder text, *default* `Type here…`, *type* Array
@@ -44,7 +44,7 @@ var instance = new CompleteMe(element, { options });
 - `canAddNewRecordsText` Text / DOM element to show when there are no results.`canAddNewRecords` option has to be True., *default* `Hit <span class="cm-key">enter</span> to add`, *type* String
 - `fetchingMoreResultsText` Text to show when remote data is being fetched – only shows when `onNoResults` callback is used., *default* `Fetching more results...`, *type* String
 - `suggestResult` Show suggestion in placeholder, *default* `False`, *type* Boolean
-- `saveByValue` When data is an array of objects set data-save-value to the selected object’s value attribute. When False data-save-value is set to the selected objects key attribute., *default* `True`, *type* Boolean
+- `saveByValue` When data is an array of objects set data-save-value to the selected object’s value attribute. When False data-save-value is set to the selected objects key attribute. *default* `True`, *type* Boolean
 
 ### Callbacks
 
