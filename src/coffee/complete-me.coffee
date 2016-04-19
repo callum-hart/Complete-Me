@@ -26,6 +26,7 @@ noop = ->
 
 class CompleteMe
   defaultOptions:
+    data: []
     placeholder: "Type here..."
     noResultsText: "Couldn't find"
     canAddNewRecordsText: """Hit <span class="cm-key">enter</span> to add"""
