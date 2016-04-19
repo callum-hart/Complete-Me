@@ -14,6 +14,14 @@ A demo of the library in action can be [found here](http://www.callumhart.com/op
 
 So far tested on Chrome, Firefox and Safari.
 
+### To Run
+
+```
+cd Complete-Me
+npm install
+grunt watch
+```
+
 ### To initialise
 
 ```javascript
