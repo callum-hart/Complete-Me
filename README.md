@@ -17,9 +17,9 @@ So far tested on Chrome, Firefox and Safari.
 ### To run
 
 ```
-cd Complete-Me
-npm install
-grunt watch
+$ cd Complete-Me
+$ npm install
+$ grunt watch
 ```
 
 ### To initialise
