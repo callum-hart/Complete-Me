@@ -36,7 +36,7 @@ var instance = new CompleteMe(element, { options });
   - Empty array i.e `[]`
   - Flat array i.e `[“a”, “b”, “c”]`
   - Array of objects i.e `[{“key”: “id”, “value”: “ID”}, {“key”: “email_address”, “value” : “Email Address”}]`
-- `placeholder` Placeholder text, *default* `Type here…`, *type* Array
+- `placeholder` Placeholder text, *default* `Type here…`, *type* String
 - `selectedValue` Select an existing result by its value, *type* String
 - `selectedKey` Select an existing result by its key, *type* String
 - `noResultsText` Text to show when there are no results., *default* `Couldn't find {{searchQuery}}`, *type* String
