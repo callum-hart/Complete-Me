@@ -54,7 +54,7 @@ var instance = new CompleteMe(element, { options });
 - `onFocussed` When “focus” event is fired (within autocomplete).
 - `onBlurred` When “blur” event is fired (within autocomplete).
 - `onKeyedDown` When “keydown” event is fired (within autocomplete).
-- `onKeyedUp` When “keydown” event is fired (within autocomplete).
+- `onKeyedUp` When “keyup” event is fired (within autocomplete).
 - `onShowSuggestion` When suggestion is shown. `suggestSuggestion` option has to be True.
 - `onClearSuggestion` When suggestion is hidden. `suggestSuggestion` option has to be True.
 - `onSuggestionSelected: (value)` When user accepts suggestion. `suggestSuggestion` option has to be True.
