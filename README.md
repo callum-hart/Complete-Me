@@ -55,9 +55,9 @@ var instance = new CompleteMe(element, { options });
 - `onBlurred` When “blur” event is fired (within autocomplete).
 - `onKeyedDown` When “keydown” event is fired (within autocomplete).
 - `onKeyedUp` When “keyup” event is fired (within autocomplete).
-- `onShowSuggestion` When suggestion is shown. `suggestSuggestion` option has to be True.
-- `onClearSuggestion` When suggestion is hidden. `suggestSuggestion` option has to be True.
-- `onSuggestionSelected: (value)` When user accepts suggestion. `suggestSuggestion` option has to be True.
+- `onShowSuggestion` When suggestion is shown. `suggestResult` option has to be True.
+- `onClearSuggestion` When suggestion is hidden. `suggestResult` option has to be True.
+- `onSuggestionSelected: (value)` When user accepts suggestion. `suggestResult` option has to be True.
 - `updateData: (value)` Update the data that displays in the dropdown.
 
 ### Data attributes
