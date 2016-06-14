@@ -62,6 +62,7 @@
 .cm-container .cm-input-wrap .cm-input,
 .cm-container .cm-input-wrap .cm-suggestion {
   padding: 4px 10px;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
