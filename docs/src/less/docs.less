@@ -74,10 +74,7 @@ section {
       position: absolute;
       top: 8px;
       right: 8px;
-      text-transform: uppercase;
-      font-size: 12px;
-      font-weight: 600;
-      color: rgba(56,70,97,.3);
+      .upperCaseText();
     }
 
     pre {
@@ -91,4 +88,30 @@ section {
       color: rgba(56,70,97,.9);
     }
   }
+}
+
+footer {
+  clear: both;
+  max-width: 560px;
+  margin: 0 auto;
+
+  small {
+    .upperCaseText();
+    float: left;
+    width: 100%;
+    margin: 30px 0 0 0;
+    padding: 14px 0 0 0;
+    border-top: 2px solid rgba(56,70,97,1);
+  }
+
+  a {
+    color: rgba(56,70,97,.3);
+  }
+}
+
+.upperCaseText() {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(56,70,97,.3);
 }
