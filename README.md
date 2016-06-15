@@ -127,7 +127,7 @@ var instance = new CompleteMe(element, { options });
 - **Type** `String`
 - **Default** `Hit <span class="cm-key">enter</span> to add`
 - **Condition**
-  - Option `canAddNewRecords` has to be set to `true`.
+  - Option [`canAddNewRecords`](#canaddnewrecords) has to be set to `true`.
 
 ### fetchingMoreResultsText
 
