@@ -38,6 +38,14 @@ section a {
 section a:hover {
   color: #0a5aff;
 }
+section i a {
+  font-weight: normal;
+  color: rgba(56, 70, 97, 0.9);
+  border-bottom: 1px dotted rgba(56, 70, 97, 0.3);
+}
+section i a:hover {
+  color: rgba(37, 47, 65, 0.9);
+}
 .example {
   max-width: 600px;
   margin: 0 auto;
