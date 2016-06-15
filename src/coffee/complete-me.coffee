@@ -48,7 +48,7 @@ class CompleteMe
   domCap: 10 # Number of results in the DOM, perhaps make a config option? (dropdown height is li height * domCap)
   resultsOpen: no
   resultsAreObjects: no
-  version: "0.1.0"
+  version: "0.1.1"
 
   constructor: (selector, options) ->
     @handleElm selector
