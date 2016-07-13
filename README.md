@@ -49,7 +49,7 @@ A demo of the library in action can be [found here](http://www.callumhart.com/op
 
 ### Supported Browsers
 
-So far tested on Chrome, Firefox and Safari.
+So far tested on Chrome, Firefox, Safari and Opera.
 
 ### Dependencies
 
