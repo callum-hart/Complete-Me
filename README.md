@@ -283,7 +283,15 @@ Classes that are applied when a certain condition is true.
 - **Condition**
   - Applied when there aren’t any results for the given search query.
 - **Element**
-  - Applied to `.cm-results li`
+  - Applied to `.cm-container .cm-results-wrap .cm-results li`
+
+#### cm-highlight
+`.cm-highlight`
+
+- **Condition**
+  - Applied to the text matching the search query.
+- **Element**
+  - Applied to `.cm-container .cm-results-wrap .cm-results a span`
 
 ### Data Attributes
 
