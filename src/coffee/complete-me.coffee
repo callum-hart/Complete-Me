@@ -44,6 +44,7 @@ class CompleteMe
     onSuggestionSelected: noop
     suggestResult: no
     saveByValue: yes
+    decodeHTMLEntities: no
 
   domCap: 10 # Number of results in the DOM, perhaps make a config option? (dropdown height is li height * domCap)
   resultsOpen: no
@@ -55,6 +56,8 @@ class CompleteMe
 
     if @elm
       @options = Utils.extend {}, @defaultOptions, options
+      if @options.decodeHTMLEntities
+        @options.data = Utils.decode @options.data
       @allResults = @options.data
       @handleTemplate()
       @bindPersistentEvents()
@@ -385,13 +388,8 @@ class CompleteMe
       singleResultElm = @resultsElm.querySelectorAll("li")[index]
       @render singleResultElm, singleResultsSnippet
 
-    if @options.suggestResult and @resultsOpen
-      ###
-        Querying the result attr encodes HTML entities for free (the DOM does it for us).
-        For example if the result contains &amp; the suggestion renders &.
-      ###
-      topResult = @resultsElm.querySelector("a").dataset.result
-      @handleSuggestion topResult
+    if @resultsAreObjects then topResult = @domResults[0].value else topResult = @domResults[0]
+    @handleSuggestion topResult if @options.suggestResult and @resultsOpen
 
   highlightSearchTerm: (result) ->
     Utils.highlightCharacterInString @input.value, result, @highlightedMatchClass
@@ -544,6 +542,13 @@ Utils =
       else if !timeout and options.trailing != false
         timeout = setTimeout(later, remaining)
       result
+
+  decode: (data) ->
+    decodeDelimiter = "(*_*)" # Use obscure delimiter rather than relying on .toString() as data may contain commas.
+    data = data.join decodeDelimiter
+    textarea = document.createElement "textarea"
+    textarea.innerHTML = data
+    textarea.value.split decodeDelimiter
 
 Keyboarding =
   alphanumericKeys:
