@@ -37,6 +37,7 @@ Complete Me is a JavaScript library for **autocompletes**. It can **suggest resu
     - [results-showing](#results-showing)
     - [focussed](#focussed)
     - [cm-without-results](#cm-without-results)
+    - [cm-highlight](#cm-highlight)
   - [Data Attributes](#data-attributes)
     - [data-tabindex](#data-tabindex)
     - [data-save-value](#data-save-value)
