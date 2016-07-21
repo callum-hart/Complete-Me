@@ -195,8 +195,8 @@ class CompleteMe
       @setValue @options.selectedValue
     ###
       If completeMe has an existing value selected by its key name
-      i.e [{ key: "id", value: "John Smith" },...]
-      selectedKey: "id" would set the value of the input to "John Smith"
+      i.e [{ key: "1", value: "John Smith" },...]
+      selectedKey: "1" would set the value of the input to "John Smith"
     ###
     if @options.selectedKey
       if Utils.present @options.selectedKey
@@ -385,8 +385,13 @@ class CompleteMe
       singleResultElm = @resultsElm.querySelectorAll("li")[index]
       @render singleResultElm, singleResultsSnippet
 
-    if @resultsAreObjects then topResult = @domResults[0].value else topResult = @domResults[0]
-    @handleSuggestion topResult if @options.suggestResult and @resultsOpen
+    if @options.suggestResult and @resultsOpen
+      ###
+        Querying the result attr encodes HTML entities for free (the DOM does it for us).
+        For example if the result contains &amp; the suggestion renders &.
+      ###
+      topResult = @resultsElm.querySelector("a").dataset.result
+      @handleSuggestion topResult
 
   highlightSearchTerm: (result) ->
     Utils.highlightCharacterInString @input.value, result, @highlightedMatchClass
